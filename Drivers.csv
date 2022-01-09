@@ -1,0 +1,24 @@
+﻿CREATE TABLE Drivers
+(driverId serial,
+code varchar,
+firstname varchar,
+surname varchar,
+dob date,
+nationality varchar
+);
+
+
+COPY Drivers FROM 'D:\Desktop\big data manegement\Drivers.csv' DELIMITER ';' CSV HEADER;
+
+create table Race_Details
+(raceId serial,
+year integer,
+round integer,
+name varchar,
+date date);
+
+COPY Race_Details FROM 'D:\Desktop\big data manegement\Race_Details.csv' DELIMITER ';' CSV HEADER;
+
+drop table Race_Results
+
+
